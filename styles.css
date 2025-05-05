@@ -12,7 +12,7 @@
 
 .header {
     font-family: Roboto;
-    background-color: #1F2937;
+    background-color: #e40e0e;
     display: flex;
     flex-direction: column;
     padding: 40px 150px;
@@ -28,9 +28,10 @@
 }
 
 .up-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .mid-header {
@@ -75,27 +76,28 @@
   
   .header-text ul {
     display: flex;
-    gap: 16px;
+    gap: 40px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     color: #e5e7eb;
-    font-size: 18px;
+    font-size: 24px;
   }
 
 #button {
     display: flex;
     color: #e5e7eb;
-    background-color: #3882F6;
+    background-color: #d018f1;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     padding: 10px 30px;
     align-self: flex-start;
+    cursor: pointer;
 }
 
 #button:hover {
-  background-color: red;
+  background-color: rgb(255, 0, 102);
 }
 
 .mid-text h1, .mid-text p {
@@ -130,7 +132,6 @@
 
 .box img {
   display: flex;
-  border: 3px solid #3882F6;
   width: 150px;
   height: 150px;
   border-radius: 10px;
@@ -144,13 +145,14 @@
   max-width: 150px;
   margin: 10px 20px;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 .quote-section {
   display: flex;
   flex-direction: column;
   padding: 70px;
-  background-color: #e5e7eb;
+  background-color: #faece0;
   margin-top: 80px;
   align-items: center;
   justify-content: center;
@@ -169,15 +171,25 @@
 .quote-sign {
   max-width: 740px;
   width: 100%;  
-  text-align: right;  
+  text-align: left;  
   margin: 30px auto 0; 
-  font-size: 20px;
+  font-size: 26px;
   color: #1F2937;
 }
 
 .quote-container {
   max-width: 1200px;
   width: 100%;
+}
+
+.quote p {
+  margin-bottom: 20px;
+  line-height: 1.6; /* Optional: improves readability */
+}
+
+.quote p:first-of-type {
+  font-style: normal;
+  font-weight: bold;
 }
 
 
@@ -191,14 +203,14 @@
 
 .call-container {
   display: flex;
-  background-color: #3882F6;
+  background-color: #ed1616;
   justify-content: space-evenly;
   align-items: center;
   width: 1000px;
   height: 150px;
   border-radius: 10px;
   font-size: 15px;
-  
+  padding: 50px;
 }
 
 .call-header {
@@ -210,25 +222,26 @@
 .call-button button {
   display: flex;
   color: #e5e7eb;
-  background-color: #3882F6;
+  background-color: #ae058c;
   border-color: white;
   border-style: solid;
   border-radius: 5px;
   font-size: 18px;
   padding: 10px 30px;
   align-self: flex-start;
+  cursor: pointer;
 }
 
 .call-button button:hover {
-  background-color: white;
-  color: #1F2937;
+  background-color: rgb(255, 42, 92);
+  color: white;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1F2937;
+  background-color: #b50909;
   color: white;
   height: 40px;
   font-size: 15px;
